@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+  <!-- HOSTED -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800'
+    rel='stylesheet' type='text/css'> -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+
+  <!-- LOCAL -->
+  <link rel="stylesheet" href="style/style.css">
+  <link rel='icon' href='circlelogo-orange.png' />
+
+  <!-- HOSTED -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+  <!-- LOCAL -->
+  <script src="scripts/pt.min.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/modal.js"></script>
+
+</head>
+
+<body>
+  <div class="overflow-wrap">
+
+    <!-- HOME -->
+    <div class="modal-wrap flex">
+      <div class="mask"></div>
+      <div class="modal" id="modal">
+        <div class="carousel-wrap">
+          <div class="window">
+            <div id="carousel">
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+            </div>
+            <i class="mdi mdi-chevron-left" id="prev"></i>
+            <i class="mdi mdi-chevron-right" id="next"></i>
+          </div>
+
+        </div>
+        <div class="info-box">
+          <div class="title"></div>
+          <div class="tag"></div>
+          <div class="detail"></div>
+          <a href="#" target="_blank">
+            <div class="button"><i class="mdi mdi-open-in-new"></i>VIEW SITE</div>
+          </a>
+        </div>
+        <i class="close mdi mdi-close"></i>
+      </div>
+    </div>
+
+    <section id="home" class="flex height-fix">
+
+      <div id="pt" class="canvas"></div>
+      <div class="flex">
+        <div class="text">
+          <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Paul Mourraille.", "I am a full-stack web developer...", "and all-around creative." ]'>
+            <span class="wrap"></span>
+          </a>
+        </div>
+        <!-- <div class="text">
+          Hello, I'm <span class="highlight">Paul Mourraille</span>.
+          <br>
+          I'm a full-stack web developer.
+        </div> -->
+
+        <div class="button page-link" dest="about">View my work <i class="mdi mdi-arrow-right"></i></div>
+
+        <nav class="flex">
+          <div class="link-wrap">
+            <div class="active page-link" dest="home">home</div>
+            <div class="page-link" dest="about">about</div>
+            <div class="page-link" dest="portfolio">portfolio</div>
+            <!-- <div class="page-link" dest="blog">blog</div> -->
+            <div class="page-link" dest="contact">contact</div>
+          </div>
+          <i class="mdi mdi-menu"></i>
+        </nav>
+      </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container flex">
+
+        <!-- //////ABOUT HEADER////// -->
+        <div class="header waypoint" data-animation="slide-in-left">Who's this guy?</div>
+        <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+        <!-- //////////////////////// -->
+
+        <!-- ///////DESCRIPTION///////// -->
+        <div class="label bold">
+          I'm a full-stack developer with history rooted in photography/design.
+          <br>
+          I have serious passion for asthetics, clean spaces, UI effects and creating intuitive, dynamic user
+          experiences.
+          <br>
+          <span class="page-link highlight" dest="contact">Let's make something special.</span>
+        </div>
+        <!-- /////////////////////////// -->
+        <div class="skills-wrapper flex row-gt-sm">
+          <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+            <img src="img/me2.png" class="me">
+          </div>
+
+          <!-- //////////GRAPH/////////// -->
+          <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">CSS</div>
+              </div>
+              <span>80%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:85%">
+                <div class="tag bold flex">HTML</div>
+              </div>
+              <span>90%</span>
+            </div>
+
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">React</div>
+              </div>
+              <span>70%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:75%">
+                <div class="tag bold flex">JavaScript</div>
+              </div>
+              <span>75%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:40%">
+                <div class="tag bold flex">Python</div>
+              </div>
+              <span>40%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:70%">
+                <div class="tag bold flex">Node.js</div>
+              </div>
+              <span>70%</span>
+            </div>
+
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:60%">
+                <div class="tag bold flex">Django</div>
+              </div>
+              <span>60%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:50%">
+                <div class="tag bold flex">UI Design</div>
+              </div>
+              <span>50%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:100%">
+                <div class="tag bold flex">Photoshop</div>
+              </div>
+              <span>100%</span>
+            </div>
+
+            <div class="bar flex">
+              <div class="bar fill" style="width:80%">
+                <div class="tag bold flex">Illustrator</div>
+              </div>
+              <span>80%</span>
+            </div>
+          </div>
+          <!-- ////////////////////////// -->
+        </div>
+        <!-- ////DEV PROCCESS//// -->
+        <div class="flex label-wrap dev-process">
+          <div class="flex row-gt-sm approach">
+            <div class="flex bullet-wrap waypoint" data-animation="slide-in-right">
+              <div class="about-titles">01.<strong>Research</strong></div>
+              <p class="about-txt">Listen closely to clients needs. Understand the-
+                subject matter
+                completely. Lay out plan to address the
+                project requirements.</p>
+            </div>
+          </div>
+
+          <div class="flex row-gt-sm approach">
+            <div class="flex bullet-wrap waypoint" data-animation="slide-in-right" data-delay=".5s">
+              <div class="about-titles">02.<strong>Design</strong></div>
+              <p class="about-txt">I work in an Agile environmnt to create user stories, ERDs and wireframe mockups.
+                Together with my
+                client we inspect and improve until ready for development.</p>
+            </div>
+          </div>
+
+          <div class="flex row-gt-sm approach">
+            <div class="flex bullet-wrap waypoint" data-animation="slide-in-right" data-delay=".9s">
+              <div class="about-titles">03.<strong><a>Develop</a></strong></div>
+              <p class="about-txt">With design in-hand I work in sprints to develop the app, retesting with my client
+                along the way to
+                ensure all aspects are function correctly and to adjust design specs accordingly.</p>
+            </div>
+          </div>
+        </div>
+        <!-- ////////////////////// -->
+      </div>
+    </section>
+
+
+    <!-- /////FACTS////// -->
+    <section id="facts">
+      <div class="facts-intro container">--fun facts</div>
+      <div id="slideshow">
+        <div class="header facts-info container">
+          My personality is a combination of midwest work ethic with a west coast chill.
+        </div>
+        <div class="header facts-info container">
+          Traveled to 30 states, 20 countries and may be the only person who actually loves airports.
+        </div>
+        <div class="header facts-info container">
+          I welcome bribes in the form of Deep Dish Pizza.
+        </div>
+      </div>
+    </section>
+    <!-- //////////////// -->
+
+    <!-- /////////SPACER/////////-->
+    <!-- <div id="spacer"></div> -->
+    <!-- /////////////////////// -->
+
+    <!-- //////PORTFOLIO////// -->
+    <section class="flex" id="portfolio">
+
+      <div class="header waypoint" data-animation="slide-in-right">PROJECTS</div>
+      <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+
+      <div class="filter-wrap waypoint" data-animation="fade-in">
+        <div class="flex row">
+          <div class="filter" data-filter="all">ALL</div>
+          <div class="filter" data-filter=".react">REACT.JS</div>
+          <div class="filter" data-filter=".django">DJANGO/Python</div>
+          <div class="filter" data-filter=".js">JAVASCRIPT</div>
+        </div>
+        <div class="float-bar">
+          <div class="flex row">
+            <div class="filter" data-filter="all">ALL</div>
+            <div class="filter" data-filter=".react">REACT.JS</div>
+            <div class="filter" data-filter=".django">DJANGO/Python</div>
+            <div class="filter" data-filter=".js">JAVASCRIPT</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="gallery" class="container flex row wrap waypoint">
+        <div class="mix js react node" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Exchangagram</div>
+              <span class="highlight">REACT + Node + Javascript + MongoDB</span>
+            </div>
+            <div class="button" id="exchangagram">LEARN MORE</div>
+          </div>
+        </div>
+
+        <div class="mix django python" data-my-order="1">
+          <div>
+            <div class="card"></div>
+            <div class="text">
+              <div class="bold">Dev Connect</div>
+              <span class="highlight">Django + Python + SQL + JavaScript</span>
+            </div>
+            <div class="button" id="devconnect">LEARN MORE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ///////////////////// -->
+
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <!-- <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        class="svgcolor-light">
+        <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+      </svg> -->
+      <div class="flex flex-right">
+        <div class="waypoint contact-overlay" data-animation="slide-in-right">
+          <div class="header waypoint" data-animation="slide-in-left">CONTACT</div>
+          <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
+          <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">Let's chat! Drop me a line.</div>
+          <div class="contact-info">
+            <div><strong>paul@pauljmphoto.com</strong></div>
+            <div><strong>415.309.5400</strong></div>
+          </div>
+        </div>
+        <!-- <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form">
+          <input placeholder="Name" type="text" name="name" required>
+          <input placeholder="Enter email" type="email" name="email" required>
+          <textarea placeholder="Your Message" type="text" name="message"></textarea>
+          <div id="success">
+            <div>Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span></div>
+          </div>
+          <input class="button" type="submit" id="submit" value=SUBMIT>
+        </form> -->
+      </div>
+    </section> -->
+
+    <footer>
+      <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+      <div class="icon-wrap flex row">
+        <a href="https://www.linkedin.com/in/pauljmcreative/">
+          <div class="flex icon" id="icon-2">
+            <i class="mdi mdi-linkedin"></i>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/pauljmcreative/">
+          <div class="flex icon" id="icon-4">
+            <i class="mdi mdi-instagram"></i>
+          </div>
+        </a>
+        <a href="https://github.com/pmourraille">
+          <div class="flex icon" id="icon-5">
+            <i class="mdi mdi-github-circle"></i>
+          </div>
+        </a>
+      </div>
+      <div class="info-box">
+        <div class="footnote">Paul Mourraille <span class="highlight">&copy;2018</span></div>
+      </div>
+    </footer>
+
+  </div>
+
+  <div id="preload">
+    <img src="img/me.png" />
+    <img src="img/filler.jpg" />
+    <img src="img/thumb-1.jpg" />
+    <img src="img/thumb-2.jpg" />
+    <img src="img/slides/exchangagram-0.jpg">
+    <img src="img/slides/exchangagram-1.jpg">
+    <img src="img/slides/exchangagram-2.jpg">
+    <img src="img/slides/devconnect-0.jpg">
+    <img src="img/slides/devconnect-1.jpg">
+    <img src="img/slides/devconnect-2.jpg">
+    <!-- <img src="img/thumb-3.jpg" />
+    <img src="img/thumb-4.jpg" />
+    <img src="img/thumb-5.jpg" />
+    <img src="img/thumb-6.jpg" />
+    <img src="img/blog-1.jpg" />
+    <img src="img/blog-2.jpg" />
+    <img src="img/blog-3.jpg" />
+    <img src="img/blog-4.jpg" />
+    <img src="img/slides/mystand-0.jpg" />
+    <img src="img/slides/mystand-1.jpg" />
+    <img src="img/slides/mystand-2.jpg" />
+    <img src="img/slides/never-0.jpg" />
+    <img src="img/slides/never-1.jpg" />
+    <img src="img/slides/never-2.jpg" />
+    <img src="img/slides/powur-0.jpg" />
+    <img src="img/slides/powur-1.jpg" />
+    <img src="img/slides/powur-2.jpg" /> -->
+    <!-- <img src="img/slides/roambi-0.jpg" />
+    <img src="img/slides/roambi-1.jpg" />
+    <img src="img/slides/roambi-2.jpg" /> -->
+    <!-- <img src="img/slides/themall-0.jpg" />
+    <img src="img/slides/themall-1.jpg" />
+    <img src="img/slides/themall-2.jpg" />
+    <img src="img/slides/walker-0.jpg" />
+    <img src="img/slides/walker-1.jpg" />
+    <img src="img/slides/walker-2.jpg" /> -->
+  </div>
+
+</body>
+
+</html>
+
+<!-- <script src="scripts/canvas.js"></script> -->
